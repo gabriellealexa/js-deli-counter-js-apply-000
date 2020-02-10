@@ -1,7 +1,14 @@
+
+
 function takeANumber(line, name) {
   line.push(name);
-  return `Welcome, ${name}. You are number ${line.length} in line.`;
+  var counter = 0;
+  function add(){
+  counter+=1;
 }
+  return `Welcome, ${name}. You are ticket number ${counter} in line.`;
+}
+
 
 function currentLine(line) {
   if (!line.length) {
@@ -24,3 +31,4 @@ function currentLine(line) {
   }
   return `Currently serving ${line.shift()}.`;
 }
+
